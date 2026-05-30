@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Стандартные стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Стили тега body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../img/bkg-ico.avif) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Стили для обёртки */
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: white;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+/* Логотип "Благода" */
+.wrapper img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 301px;
+  height: 65px;
+}
+
+/* Поля ввода */
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: white;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+/* Блок 'Remember' */
+.wrapper .remember {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember label input{
+  accent-color: white;
+  margin-right: 3px;
+}
+
+.remember a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  transition: .3s;
+}
+
+.remember a:hover {
+  opacity: .7;
+}
+
+/* Кнопка */
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+
+  transition: all 0.2s ease;
+}
+
+.wrapper .btn:hover {
+  background: rgba(255, 255, 255, 0.59);
+  transform: translateY(-1.5px);
+}
+
+.wrapper .btn:focus{
+  background: rgba(255, 255, 255, 0.59);
+  transform: translateY(-1.5px);
+}
+
+.wrapper .btn:active {
+  background: rgba(255, 255, 255, 0.59);
+  transform: translateY(-1.5px);
+
+  transform: scale(0.95);
+}
+
+/* Информационное поле */
+.wrapper .info-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.info-link p a{
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.info-link p a:hover {
+  opacity: .6;
+} 

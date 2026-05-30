@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Добро пожаловать в сеть!</title>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/media.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	<div class="wrapper">
+		<form action="">
+			<!-- Логотип -->
+				<img src="./img/blagoda-ico.png" alt="Благода">
+
+			<!-- Поля ввода -->
+			<div class="input-box">
+				<input type="text" name="username" placeholder="Логин" required> <!-- required-пользователь может нажать на кнопку после заполнения формы --> 
+				<i class='bx bx-user'></i>
+			</div>
+			<div class="input-box">
+				<input type="password" name="user-password" placeholder="Пароль" required>
+				<i class='bx bxs-lock-alt'></i>
+			</div>
+
+			<!-- Если пользователь забыл пароль -->
+			<div class="remember">
+				<label>
+					<input type="checkbox" name="">
+					Запомнить меня
+				</label>
+					<a href="https://web.telegram.org/k/#@VladislavVit" target="_blank">Нужна помощь?</a>
+			</div>
+
+			<!-- Кнопка -->
+			<button type="submit" class="btn">
+				Войти
+			</button>
+
+			<!-- Ссылка для регистрации -->
+			<div class="info-link">
+				<p>Нажимая "Войти", вы соглашаетесь с 
+					<a href="https://mincifra.gospmr.org/%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD-%D0%BF%D0%BC%D1%80-%D0%BE%D0%B1-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD/" target="_blank">
+						Правилами
+					</a>
+					использования сети.
+				</p>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
